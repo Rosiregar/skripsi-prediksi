@@ -1,0 +1,48 @@
+﻿# environment
+.env
+.venv/
+venv/
+
+# git
+.git/
+.gitignore
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# vscode
+.vscode/
+
+# local database
+storage/app.db
+*.db
+*.sqlite
+*.sqlite3
+
+# uploaded files and generated artifacts
+storage/datasets/*
+storage/models/*
+storage/scalers/*
+storage/features/*
+storage/reports/*
+storage/temp/*
+
+# keep folder structure
+!storage/datasets/.gitkeep
+!storage/models/.gitkeep
+!storage/scalers/.gitkeep
+!storage/features/.gitkeep
+!storage/reports/.gitkeep
+!storage/temp/.gitkeep
+
+# logs
+logs/*
+!logs/.gitkeep
+
+# os files
+.DS_Store
+Thumbs.db

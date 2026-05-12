@@ -1,0 +1,56 @@
+﻿# environment
+.env
+.venv/
+venv/
+env/
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.ipynb_checkpoints/
+
+# streamlit
+.streamlit/secrets.toml
+
+# database lokal
+storage/app.db
+*.sqlite
+*.sqlite3
+*.db
+
+# file hasil upload dan training
+storage/datasets/*
+storage/models/*
+storage/scalers/*
+storage/features/*
+storage/reports/*
+storage/temp/*
+
+# tetap simpan struktur folder
+!storage/datasets/.gitkeep
+!storage/models/.gitkeep
+!storage/scalers/.gitkeep
+!storage/features/.gitkeep
+!storage/reports/.gitkeep
+!storage/temp/.gitkeep
+
+# model artifacts di luar folder storage
+*.keras
+*.h5
+*.joblib
+*.pkl
+
+# logs
+logs/*
+!logs/.gitkeep
+
+# vscode / editor
+.vscode/
+.idea/
+
+# os
+.DS_Store
+Thumbs.db

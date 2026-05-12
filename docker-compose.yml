@@ -1,0 +1,12 @@
+﻿services:
+  app:
+    build: .
+    container_name: pengangguran-lstm-app
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./storage:/app/storage
+      - ./logs:/app/logs
+    restart: unless-stopped
